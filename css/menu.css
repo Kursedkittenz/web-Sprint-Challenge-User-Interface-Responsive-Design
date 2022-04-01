@@ -49,11 +49,13 @@ table {
 
 * {
     box-sizing: border-box;
+    text-align: center;
 }
 
 html {
     max-width: 1920px;
     min-width: 428px;
+    width: 100%;
     font-size: 62.5%;
 }
 
@@ -67,49 +69,37 @@ h1, h2, h3, h4, h5, h6, p, a, i {
 }
 
 h1 {
+    color: rgb(225, 239, 230);
     font-size: 7.5rem;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
 }
 
 h2 {
-    font-size: 6rem;
+    font-size: 3vw;
 }
 
 h3 {
     font-size: 5rem;
 }
 
-h4 {
-    font-size: 4rem;
+.brand{
+    font-size: 6em;
+    height: 2.5vw; 
+    width: 25vw;
+    margin-left: 37vw; 
+    padding-bottom: 4vw;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(225, 239, 230);
 }
 
-p, a {
-    font-size: 3rem;
+.title{
+    background-color: rgb(32, 32, 49, 0.8);
 }
-
-/* header section */
-header {
-    width: 100%;
-    height: 100vh;
-    background-image: url('../img/menu-header.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.title nav{
+    padding: 1vw;
 }
-
-/* spacer */
-.spacer {
-    width: 100%;
-    height: 20vh;
-    background-color: rgb(0, 4, 17);
-}
-.spacer-sm {
-    width: 100%;
-    height: 10vh;
-    background-color: rgb(0, 4, 17);
-}
-
-/* menu */
-
 .menu {
     width: 100%;
     height: auto;
@@ -120,33 +110,408 @@ header {
     background-repeat: no-repeat;
 }
 
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 13vw;
+}
+
+.container .icon{
+    border-radius: 2vw;
+}
+
+
+.categoryTitle{
+    font-size: 3vw;
+    text-align: left;
+}
+
+p, a {
+    color: rgb(225, 239, 230);
+    font-size: 3vw;
+}
+.menu{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.menu-section{
+    justify-content: left;
+    font-size: 3vw;
+    padding: 2vw;
+    padding-right: 8vw;
+    margin-right: 3vw;
+}
+.menuContainer{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    max-width: 100%;
+    margin-left: 5vw;
+}
+.menuBackground{
+    background-color: rgb(0, 4, 17, .8);
+    color: rgb(225, 239, 230);
+}
+
+.menu-item{
+    width: 25vw;
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+}
+
+.item{
+    width: 20vw;
+    text-align: left;
+    font-size: 2vw;
+}
+.price{
+    text-align: right;
+    font-size: 2vw;
+}
+.description{
+    width:25vw;
+    text-align: left;
+    font-size: 1.5vw;
+}
+.description2{
+    font-style: italic;
+    font-size: 1.5vw;
+}
+
+/* header section */
+header {
+    max-width: 100%;
+    height: 100vh;
+    background-image: url('../img/menu-header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* spacers */
+.spacer {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(0, 4, 17);
+}
+.spacer-sm {
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(0, 4, 17);
+}
+
+/* gallery section */
+.gallery {
+    width: 100%;
+    height: 65vh;
+    text-align: center;
+    background-color: rgb(0, 4, 17);
+    padding-top: 4vw;
+}
+
+/* about us section */
+.about {
+    width: 100%;
+    height: 75vh;
+    text-align: center;
+    background-image: url("../img/staff-cooks.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.about-container {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 4, 17, .8);
+}
+
+.about h2 {
+    width: 100%;
+}
+
+.about-container .text {
+    width: 50%;
+}
+
+/* contact us section */
+.contact {
+    text-align: center;
+    background-image: url("../img/jumbo-restaurant.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 4, 17);
+}
+
+.contact-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 4, 17);
+}
+
+.contact h2 {
+    padding-top: 5vh;
+}
+
+.contact h3 {
+    padding-top: 2.5vh;
+}
+
+.contact p {
+    padding: .5vh 0;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.address {
+    width: 25%;
+}
+
+.hours {
+    width: 25%;
+    padding-bottom: 2.5vh;
+}
+
+.contacts {
+    width: 25%;
+}
+
 /* footer section */
 footer {
     width: 100%;
-    height: 15vh;
+    height: 10vh;
     padding-top: 2.5vh;
+    font-size: 3rem;
+    background-color: rgb(0, 4, 17);
+    margin-left: 0;
+}
+
+
+footer .container a, p{
     font-size: 3rem;
 }
 
-/* mobile media query */
+footer .container p{
+    width:25vw;
+}
+
+.bottomContainer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    width: 25vw;
+}
+.email{
+    margin-left: 2vw;
+    height: 2vw;
+    width: 15vw;
+}
+.copyright{
+    font-size: 1vw;
+    text-align: right;
+    margin-right: 5vw;
+}
+
+/* mobile media query       ///////////////////////////////////////////////////////*/
 @media (max-width: 428px) {
     /* header section */
-    .header-title {
-        width: 75%;
-        margin: 0 auto;
+    h1 {
+        width: 50%;
+        margin-left: 27vw;
         text-align: center;
-        font-size: 4rem;
+        font-size: 3rem;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+    h2 {
+        font-size: 12vw;
+        text-decoration-line: underline;
+        text-decoration-thickness: 2vw;
+    }
+    .container{
+        display: flex;
+        flex-flow: row wrap;
+        width: 60%;
+        margin-left: 20vw;
+        justify-content: center;
+    }
+    .container a{
+        width:50vw;
+        font-size: 5vw;
+    }
+    .brand{
+        font-size: 2em;
+        padding-top: 2vw;
+        height: 10vw; 
+        width: 20vw;
+        margin-left: 40vw; 
     }
 
-    /* menu */
+    /* gallery section */
+    .gallery {
+        height: auto;
+    }
+    
+    /* about us section */
+
+    .about {
+        height: 190vh;
+    }
+    
+    .about h2 {
+        width: 100%;
+        padding-top: 5vh;
+    }
+    
+    .about-container .text {
+        width: 85%;
+    }
+    
+    /* contact us section */
+
+    p, a {
+        font-size: 3.3rem;
+    }
+
+    .contact h3 {
+        padding-top: 2.5vh;
+    }
+    
+    .info {
+        flex-wrap: wrap;
+    }
+    
+    .address {
+        width: 100%;
+        padding-bottom: 2.5vh;
+    }
+    
+    .hours {
+        width: 100%;
+    }
+    .menuContainer{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+        justify-content: center;
+        max-width: 100%;
+    }
     .menu {
         background-image: none;
+        
+    }
+    .menuBackground{
+        background-color: rgb(225, 239, 230);
+        color: rgb(0, 4, 17);
+    }
+    .menu-section{
+        justify-content: center;
+        flex-flow: column;
+        font-size: 3vw;
+        padding: 2vw;
+        padding-right: 8vw;
+        margin-right: 3vw;
+    }
+    .menu-item{
+        width: 65vw;
+        display: flex;
+        flex-flow: column wrap;
+        padding-bottom: 1vw;
+        padding-top: 1vw;
+        border-bottom: solid black 4px;
+        border-right: 0;
+    }
+    
+    .item{
+        width: 100%;
+        text-align: center;
+        font-size: 8vw;
+    }
+    .price{
+        text-align: center;
+        font-size: 8vw;
+        margin-right: 10vw;
+    }
+    .description{
+        width:70vw;
+        text-align: center;
+        font-size: 4vw;
+        color: black;
+    }
+    .description2{
+        font-style: italic;
+        text-align: center;
+        font-size: 5vw;
+        color: black;
+        margin-right: 7vw;
+    }
+    .categoryTitle{
+        font-size: 10vw;
+        text-align: center;
+        color: rgb(0, 4, 17);
+        border: 4px solid black;
+        width: 80%;
+        margin-left: 10vw;
+    }
+    .contacts {
+        width: 100%;
+        padding-bottom: 2.5vh;
     }
 
     /* footer section */
     footer {
         height: auto;
         padding-top: 2.5vh;
-        font-size: 2rem;
+        font-size: 1.5rem;
+        background-color: rgb(0, 4, 17);
+    }
+
+    footer .container a{
+        font-size: 3rem;
+    }
+    
+    footer .container p{
+        width:85vw;
+    }
+    .bottomContainer{
+        display: flex;
+        flex-flow: row wrap;
+        width: 90vw;
+    }
+    .copyright{
+        font-size: 4vw;
+        text-align: center;
+        width: 80%;
+        margin-left: 10vw;
+    }
+    .container nav{
+        margin:0;
+        width: 50vw;
+        padding-bottom: 2vw;
+    }
+    .email{
+        margin-left: 2vw;
+        height: 6vw;
+        width: 85vw;
+    }
+    .emailButton{
+        margin-left: 2vw;
+        height: 6vw;
+        width: 85vw;
+        padding-bottom: 4vw;
     }
 }
